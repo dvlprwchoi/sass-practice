@@ -1,1 +1,3 @@
-# sass-practice
+# SASS Practice
+
+- Learning SASS
