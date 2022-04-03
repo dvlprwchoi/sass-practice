@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'media-queries';
 
 %align-center {
     display: flex;
@@ -7,7 +8,7 @@
 
 .navbar {
     background: $yellowGreen;
-    color: $light;
+    // color: $light;
     text-decoration: none;
     height: 80px;
     display: flex;
@@ -24,5 +25,18 @@
         margin-left: 24px;
         font-style: oblique;
         @extend %align-center
+    }
+
+    &__bars {
+        opacity: 0;
+
+        @include tablet {
+            color: $light;
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            right: 20px;
+            font-size: 2rem;
+        };
     }
 }

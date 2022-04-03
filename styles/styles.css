@@ -9,7 +9,6 @@
 
 .navbar {
   background: yellowgreen;
-  color: #f7f7f7;
   text-decoration: none;
   height: 80px;
   display: -webkit-box;
@@ -30,6 +29,21 @@
   font-size: 2rem;
   margin-left: 24px;
   font-style: oblique;
+}
+
+.navbar__bars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__bars {
+    color: #f7f7f7;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
 }
 
 * {
